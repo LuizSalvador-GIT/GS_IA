@@ -1,4 +1,4 @@
-# Lia · ColetAr Boa Vereda
+# Lia
 
 A Lia é uma assistente de descarte criada para a Global Solution 2026.2 da FIAP. Ela consulta uma base municipal simulada, cita os documentos usados na resposta e calcula o próximo horário de atendimento dos ecopontos.
 
