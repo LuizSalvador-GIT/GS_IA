@@ -1,0 +1,147 @@
+{
+  "provedor": "NVIDIA NIM",
+  "modelo": "poolside/laguna-xs-2.1",
+  "juiz": "poolside/laguna-xs-2.1",
+  "embeddings": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "ragas": "0.4.3",
+  "chunking": {
+    "chunk": 850,
+    "sobreposição": 120,
+    "n_chunks": 6,
+    "portão e balcão / 2": 2,
+    "cadastro e interdição / 2": 2,
+    "total / 4": 4
+  },
+  "k": 5,
+  "completo": true,
+  "medias": {
+    "faithfulness": {
+      "media": 0.96875,
+      "n_validos": 8
+    },
+    "answer_relevancy": {
+      "media": 0.797968809297385,
+      "n_validos": 8
+    },
+    "context_precision": {
+      "media": 0.6249999999510416,
+      "n_validos": 8
+    },
+    "context_recall": {
+      "media": 1.0,
+      "n_validos": 8
+    }
+  },
+  "medias_por_nivel": {
+    "simples": {
+      "faithfulness": {
+        "media": 1.0,
+        "n_validos": 4
+      },
+      "answer_relevancy": {
+        "media": 0.8196440207447007,
+        "n_validos": 4
+      },
+      "context_precision": {
+        "media": 0.7708333332635416,
+        "n_validos": 4
+      },
+      "context_recall": {
+        "media": 1.0,
+        "n_validos": 4
+      }
+    },
+    "armadilha": {
+      "faithfulness": {
+        "media": 0.9375,
+        "n_validos": 4
+      },
+      "answer_relevancy": {
+        "media": 0.7762935978500694,
+        "n_validos": 4
+      },
+      "context_precision": {
+        "media": 0.4791666666385416,
+        "n_validos": 4
+      },
+      "context_recall": {
+        "media": 1.0,
+        "n_validos": 4
+      }
+    }
+  },
+  "perguntas": [
+    {
+      "id": "S1",
+      "nivel": "simples",
+      "pergunta": "Qual é o limite de óleo usado por visita ao ColetAr?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8835281364036885,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0
+    },
+    {
+      "id": "S2",
+      "nivel": "simples",
+      "pergunta": "Como preparar vidro quebrado para descarte no ecoponto?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7154332162219745,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0
+    },
+    {
+      "id": "S3",
+      "nivel": "simples",
+      "pergunta": "Em qual endereço fica o ecoponto CT03?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9234878353330158,
+      "context_precision": 0.49999999995,
+      "context_recall": 1.0
+    },
+    {
+      "id": "S4",
+      "nivel": "simples",
+      "pergunta": "O ecoponto CT03 recebe óleo de cozinha?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.756126895020124,
+      "context_precision": 0.5833333333041666,
+      "context_recall": 1.0
+    },
+    {
+      "id": "A1",
+      "nivel": "armadilha",
+      "pergunta": "O cadastro dizia que o CT01 recebia óleo no sábado. Em 14/11/2026 ainda posso entregar lá? Onde devo ir?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7632350609844657,
+      "context_precision": 0.499999999975,
+      "context_recall": 1.0
+    },
+    {
+      "id": "A2",
+      "nivel": "armadilha",
+      "pergunta": "O ecoponto CT02 abre às 08:00 no sábado, 14/11/2026, como consta no cadastro antigo? Qual é a faixa vigente?",
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.7464933309982489,
+      "context_precision": 0.3333333333,
+      "context_recall": 1.0
+    },
+    {
+      "id": "A3",
+      "nivel": "armadilha",
+      "pergunta": "O comunicado mudou também o horário de sexta do ecoponto CT02? Compare com o horário de sábado.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7779776890309796,
+      "context_precision": 0.5833333333041666,
+      "context_recall": 1.0
+    },
+    {
+      "id": "A4",
+      "nivel": "armadilha",
+      "pergunta": "Durante a interdição do CT01, em que endereço, por qual entrada e em qual balcão levo óleo no sábado ao ponto substituto?",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.817468310386583,
+      "context_precision": 0.499999999975,
+      "context_recall": 1.0
+    }
+  ]
+}
